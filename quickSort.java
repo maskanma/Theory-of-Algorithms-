@@ -52,7 +52,6 @@ public static int partition(int[] a, int l, int r) {
             return j;
         }
 
-        // Обмін елементів
         int temp = a[i];
         a[i] = a[j];
         a[j] = temp;
