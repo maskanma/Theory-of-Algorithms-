@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Kruskal {
+public class Krusk {
 
     private static final int V = 8;
 
