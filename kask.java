@@ -31,23 +31,24 @@ public class Kruskal {
     public static void main(String[] args) {
 
         Edge[] edges = {
-                new Edge(1, 3, 2),
-                new Edge(1, 4, 4),
-                new Edge(1, 6, 8),
-                new Edge(2, 3, 7),
-                new Edge(2, 4, 6),
-                new Edge(2, 6, 3),
-                new Edge(2, 7, 6),
-                new Edge(3, 8, 4),
-                new Edge(4, 5, 1),
-                new Edge(5, 7, 4),
-                new Edge(6, 8, 3),
-                new Edge(7, 8, 5)
+                new Edge(1, 2, 2),
+                new Edge(1, 4, 1),
+                new Edge(1, 3, 5),
+                new Edge(1, 7, 7),
+                new Edge(2, 4, 3),
+                new Edge(2, 5, 6),
+                new Edge(3, 5, 2),
+                new Edge(3, 6, 4),
+                new Edge(3, 7, 4),
+                new Edge(4, 5, 5),
+                new Edge(4, 6, 4),
+                new Edge(4, 7, 9),
+                new Edge(5, 6, 3),
+                new Edge(6, 8, 1),
+                new Edge(7, 8, 6)
         };
 
-        for (int i = 1; i <= V; i++) {
-            parent[i] = i;
-        }
+        for (int i = 1; i <= V; i++) parent[i] = i;
 
         Arrays.sort(edges, (a, b) -> Integer.compare(a.w, b.w));
 
